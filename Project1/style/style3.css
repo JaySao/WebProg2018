@@ -1,0 +1,8 @@
+body{
+  background: url("../assets/kitchen.jpg");
+  background-repeat:no-repeat;
+}
+h1{
+  position: absolute;
+  top: 10px;
+}

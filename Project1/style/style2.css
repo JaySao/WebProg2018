@@ -1,0 +1,10 @@
+body{
+  background: url("../assets/forest.jpg");
+  background-repeat: no-repeat;
+}
+h1{
+  position: absolute;
+  color:white;
+  left:440px;
+  top:340px;
+}

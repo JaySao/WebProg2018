@@ -10,3 +10,19 @@ img{
   left: 325px;
   top:150px;
 }
+.door{
+  position:relative;
+  width:70px;
+  height: 120px;
+  background-color:red;
+  left:350px;
+  top:115px;
+}
+.door2{
+  position:absolute;
+  width:70px;
+  height: 320px;
+  background-color:red;
+  left:720px;
+  top:100px;
+}
