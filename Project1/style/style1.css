@@ -1,0 +1,12 @@
+body{
+  background: url("../assets/interior1.png");
+  background-repeat: no-repeat;
+}
+h1{
+  color: red;
+}
+img{
+  position: relative;
+  left: 325px;
+  top:150px;
+}
