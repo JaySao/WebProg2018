@@ -11,9 +11,139 @@ img{
   left: 450px;
   top:290px;
 }
+
+
+/*Dog spin on hover */
+
+
+#dog:hover{
+transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+}
+/* Dog spins on hover with a speed of 0.70s */
+
+
 .speech{
+  font-size: 30px;
   position: absolute;
   background-color: white;
-  left:450px;
+  border-radius: 1rem;
+  left:300px;
   top:450px;
+}
+.speech:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 33px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -16.5px;
+	margin-bottom: -33px;
+}
+
+
+#dog{
+  position: relative;
+  left: 100px;
+  top:150px;
+
+  margin-top: 370px;
+
+  /* Fade in animation last 2sec*/
+   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
+
+/* declare bounce keyframe*/
+
+
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+
+
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+
+
+  -webkit-animation-name: slide;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+
+
+
+
+}
+
+@keyframes slide{
+25%{
+    left: 400px;
+  }
+}
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* dog fades in 2s */
+
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/*Dog spin on hover */
+
+/* Dog spins on hover with a speed of 0.70s */
+
+/*
+@-webkit-keyframes bounce {
+  0%, 20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);}
+}
+*/
+@keyframes bounce {
+  0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);}
 }
