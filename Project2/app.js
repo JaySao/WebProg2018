@@ -13,17 +13,21 @@ $(document).ready(function(){
 
 	$('#next').click(function(){										//wait for click
 		index++;
-		let value=$('input[name=radioSet1]:checked').val();
+		let value =$('input[name=radioSet1]:checked').val();
 		score +=parseInt(value);
 		console.log(value);
 		$('#question').text(questions[index]);
 		if(index == questions.length){
+                    //onClick('Submit')
 			if(score>0){
-				alert("Youre an introvert");
+				alert("You're an introvert!\nYou tend to recharge by spending time alone and lose energy from being around people for long periods of time, particularly large crowds." );
 			}
 			else{
-				alert("Youre an extrovert");
+				alert("You're an extrovert! \nYou find their energy is at its lowest when you spend too much time alone.");
 			}
 		}
+                /*****Styling the alert****/
+              
+                
 	});
 });

@@ -18,14 +18,15 @@ body{
 }
 
 h1{
-    //font-family: ;
     font-size: 50px;
     font-style: oblique;
     font-weight: 600;
     text-shadow: grey;
 }
 
-
+.alert{
+    text-align: center;
+}
 /*******ids******/
 .container {
 text-align: center;
